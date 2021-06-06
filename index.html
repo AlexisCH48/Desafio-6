@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ricomida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-white">
+    <div class="container">
+      <h2>Ricomida</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recetas">Recetas<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!---tooltip y correo---------------------------->
+  <section class="container my-5 pt-5" id="pizza">
+    <div class="recipes-pizza border-top border-dark">
+      <div class="hero-pizza d-md-inline-flex">
+        <div class="title-pizza col-md-6 mx-md-0 px-md-0">
+          <img src="assets/img/principal.jpg" class="card-img-top rounded mt-3" alt="pizzachicago">
+        </div>
+        <div class="pizza-button col-md-6 mx-md-0 my-md-auto">
+          <h3 class="text-center border-bottom border-dark my-1 py-3 font-weight-bold text-md-left">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h3>
+          <p class="text-center font-weight-bold my-3 text-md-left">110 MIN / 6 A 8 PORCIONES</p>
+          <div class="button-recipe text-center text-md-left">
+            <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo" id="btn_mail">Enviar por correo</button>
+            <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1 button-margin"  data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+          </div>
+        </div> 
+      </div>
+      <section id="mail-alert">
+<!--carusel-------------------------------->
+      </section>
+      <div class="carousel rounded pt-4 pb-5 d-sm-none d-md-block border-bottom border-dark">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators text-dark">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <div class="row">
+                <div class="col-3">
+                  <img src="assets/img/slider-1.png " class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-2.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-3.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-4.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="row">
+                <div class="col-3">
+                  <img src="assets/img/slider-5.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-6.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-7.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/slider-8.png" class="card-img-top rounded mt-3" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--titulos (color rojo)-------------------->      
+      <div class="text-pizza mt-5 d-md-inline-flex">
+        <div class="row">
+          <div class="ingredients-text col-md-6">
+            <p id="title_1" class="font-weith-bolder border-bottom border-dark w-25">INGREDIENTES</p> 
+            <p><br>Masa <br><br></p>
+            <p>20 gr de levadura seca instantánea<br>1 cucharadita de azúcar<br>500 ml agua tibia<br>100 ml aceite vegetal<br>4 cucharadas de aceite de oliva<br>65 gr harina de maíz fina (chuchoca)<br>2 cucharaditas de sal<br>625 gr harina<br>
+            <p>Salsa<br><br>5 cucharadas de aceite de oliva<br>½ cebolla picada en cubos finos<br>2 cucharaditas de sal<br>3 cucharadas de Orégano Gourmet<br>1 ½ cucharadas de Albahaca Gourmet<br>2 tarro de tomates en cubos al natural<br>2 cucharaditas de azúcar<br></p>
+            <p class="mb-0">Relleno<br><br>½ cebolla, en cubos<br>500 gr hojas de espinacas picadas<br>400 gr de champiñones, laminados<br>300 gr de queso mozarella<br>4 cucharadas queso parmesano</p>
+            <br>
+          </div>
+          <div class="preparation-pizza col-md-6">
+            <p id="title_2" class="font-weith-bolder border-bottom border-dark w-25">PREPARACIÓN</p>
+            <p>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p> 
+            <p>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</p>
+            <p>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</p>
+            <p>4. Calentar el horno a 220C.</p>
+            <p>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</p>
+            <p>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.<br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+<!--cartas(toggle)------------------------------>
+  <section id=recetas class="container my-4 pt-1" id="recetas">
+    <h3 class="text-center border-top border-dark my-4 py-4 font-weight-bold">RECETAS RELACIONADAS</h3>
+    <div class="card-deck">
+      <div class="row mx-auto">
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card h-100 text-gray font-weight-lighter">
+            <img  src="assets/img/recipe-card-1.png" class="card-img-top" alt="recipe1">
+            <div class="card-body receta">
+              <h5 class="card-title font-weight-lighter py-2 font-weight-bold">PANQUEQUES CON MANJAR Y CREMA</h5>
+              <div class="text-1">
+                <p class="card-text d-inline my-5">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card h-100 text-gray font-weight-lighter">
+            <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="recipe2">
+            <div class="card-body receta pb-0">
+              <h5 class="card-title font-weight-lighter py-2 font-weight-bold">TIRAMISU</h5>
+              <div class="text-2">
+                <p class="card-text d-inline my-5">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card h-100 text-gray font-weight-lighter">
+            <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="recipe3">
+            <div class="card-body receta pb-0">
+              <h5 class="card-title font-weight-lighter py-2 font-weight-bold">PLATEADA</h5>
+              <div class="text-3">
+                <p class="card-text d-inline my-5">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="container-fluid text-center text-white bg-danger p-3">
+    <div class="container">
+      <h3 class="text-center mt-5 font-weight-bold newsletter-title">
+        SUSCRÍBETE EN NUESTRO NEWSLETTER
+      </h3>
+      <p class="newsletter-text font-weight-lighter py-3">
+        y obtén las mejores recetas que tenemos en <span class="logo-name">Ricomida</span>
+      </p>
+      <form>
+        <div class="text-center mx-md-1 mb-5 pb-2">
+          <button type="submit" class="btn btn-danger btn-outline-light font-weight-normal container-sm py-2">Empezar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center bg-dark text-white p-4">
+    <h2>Ricomida</h2>
+  </footer>
+
+  <!-- JQuery 3.5.1-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!-- Popper 1.16.1-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
+  <!-- Bootstrapt 4.5.2-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!--Mi script-->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
+  

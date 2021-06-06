@@ -1,0 +1,71 @@
+h2, .logo-name {
+  font-family: 'Lobster', cursive;
+  font-size: 37px;
+}
+body {
+  font-family: 'Cabin', sans-serif;
+}
+.border-top {
+  margin: 0px 15px;
+}
+.button-recipe button {
+  font-size: 0.8125rem;
+}
+.newsletter-title{
+  font-size: 1.875rem!important;
+}
+.newsletter, .logo-name{
+  font-size: 1.25rem;
+}
+.card {
+  width: 17.37rem;
+}
+.btn-danger{
+  width: 14.5625rem;
+}
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 40px;
+    }
+    .pizza-button {
+      padding-right: 50px;
+    }
+    .button-recipe button {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 20px;
+    }
+    .carousel-indicators {
+      top: 200px;
+    }
+    .carousel-indicators li {
+      background-color: #373A3C;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .recipes-pizza {
+      border-color: #ffffff!important;
+    }
+    .newsletter-text, .logo-name {
+      font-size: 30px;
+    }
+    .button-margin {
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .card {
+      width:100%;
+      margin: 0px auto;
+    }
+  }
+  @media (max-width: 576px){
+    .w-25 {
+      width: 50%!important;
+    }
+    .carousel {
+      display: none;
+    }
+  }
